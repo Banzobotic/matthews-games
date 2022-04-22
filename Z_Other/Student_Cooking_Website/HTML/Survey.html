@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Survey</title>
+<link rel="stylesheet" type="text/css" href="../cookingStyles.css">
+<script type="text/javascript" src="../CookingJava2.js"></script>
+
+</head>
+
+<body>
+
+<!-- Page Header -->
+<header>
+<img class="imageBanner" src="../IMAGES/cookingBanner.JPG">
+
+<h1 ID="headerH1">Cooking for Students</h1>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+
+<ul>
+
+<li><a href="Home.html">Home</a></li>
+<li><a href="Italian.html">Italian</a></li>
+<li><a href="Indian.html">Indian</a></li>
+<li><a href="Chinese.html">Chinese</a></li>
+<li><a href="Thai.html">Thai</a></li>
+<li><a href="Survey.html">Survey</a></li>
+</ul>
+</nav>
+
+<!-- The main content of the page -->
+<main>
+
+<div ID="basicDiv">
+
+	<div id="SWTHE" style="display:block">
+		<form  name="SurveyForm" onsubmit="return validateForm()" >
+			<div>
+		<br>
+		<p style="font-size:24px"><strong>Survey</strong></p><br>
+		<p>Please fill out this survey to tell us what you think of this website.</p><br>
+		<Strong><p>Personal Details;</p></strong><br>
+		FirstName:<br>
+		<input type="text" name="firstName" size="25" maxlength="20" requried>
+		<br>
+
+		Surname:<br>
+		<input type="text" name="surname" size="25" maxlength="20" requried>
+		<br>
+		Age:<br>
+		<input style="margin-right:6px;" type="radio" name="age" value="yes">< 25    
+		<input style="margin-right:6px;" type="radio" name="age" value ="yes">25 - 40 
+		<input style="margin-right:6px;" type="radio" name="age" value="yes"> 40 <    
+		<br><br>
+
+		<div id="favFoods">
+		<p style="padding-bottom:5px;">Favourite Food:</p>
+
+		<div ID="NotWeb" style="float:right;">
+		<p>Not on the Website</p>
+		<select name="FavNotWeb" multiple size="4">
+		<option value="Vietnamese">Vietnamese</option>
+		<option value="American">American</option>
+		<option value="French">French</option>
+		<option value="Spanish">Spanish</option>
+		</select>
+		</div>
+
+		<div ID="ONWeb">
+		<p>On the Website</p>
+		<select name="FavOnWeb" multiple size="4">
+		<option value="Italian">Italian</option>
+		<option value="Indian">Indian</option>
+		<option value="Thai">Thai</option>
+		<option value="Chinese">Chinese</option>
+		</select>
+		</div>
+
+		</div>
+		<br>
+
+		Description of new Cooking technique:
+		<textarea name="technique" rows="5" Cols="121" maxlength="575"></textarea>
+		<br>
+		<br>
+
+		<p>Please rate the following, from 1 = poor to 5 = excellent</p>
+		<div style="text-indent:70px;">
+
+		<p>Ease of Website Use:<input    style="margin-left:17px"  type="number" name="easeOfUse" value="1" min="1" max="5" required></p>
+		<p>Quality of information:<input style="margin-left:4px"  type="number" name="easeOfUse" value="1" min="1" max="5" required></p>
+		<p>Taste of recipes:<input       style="margin-left:47px"  type="number" name="easeOfUse" value="1" min="1" max="5" required"></p>
+
+		</div>
+		 <br><br>
+		 
+		 <p>Permission for may information to be help and used for future development</p><br>
+		 <div ID="BorderedBox">
+		 Permission:<br>
+		 <input type="radio" name="CanHold" value="Yes">Yes
+		 <input type="radio" name="CanHold" value="No">No
+		 </div>
+		 
+		 </div>
+		<input type="Submit" value="Submit" style="padding:5px; margin:6px"  >
+		<br>
+		</form>
+	</div>
+
+	<div id="surveyDone" style="display:none">
+		<br><br><br>
+		<h1>Thank you for completing our survey</h1>
+		<br><br>
+		<p>Your feedback was appreciated</p><Br><Br><Br><Br><Br>
+	</div>
+
+</div>
+<!-- <div>
+<a href="surveyCompleted.html"><button>Click to go to the next page!!!</button></a>
+</div> -->
+
+
+</main>
+
+<!-- Page Footer -->
+<footer>
+<h5 id="footerText"><strong>Links to Famous Chef`s Websites</strong></h5>
+<p id="footerText"><a href="https://nicknairncookschool.com/">Nick Nairn</a></p>
+<p id="footerText"><a href="https://www.jamieoliver.com/">Jamie Oliver</a></p>
+<p id="footerText"><a href="https://www.gordonramsay.com/">Gordon Ramsay</a></p>
+</footer>
+
+</body>
+</html>
+
+

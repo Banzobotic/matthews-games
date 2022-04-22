@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!-- keep same-->
+<html>
+
+<head>
+
+<title>Make Level</title>
+<link rel="stylesheet" type="text/css" href="makeCodeStyles.css">
+<script type="text/javascript" src="makeLevelCode.js"></script>
+
+</head>
+<!-- btn stands for button, 1# is the coloum number. #1 is the row number -->
+
+<body>
+<br>
+
+<div id="tableSelect">
+
+	<table>
+	<tr>
+		<td class="F">Green / Clear</td>
+		<td><button class="g" ID="SBn1"  onclick="Sgreen()" >0</button></td>
+		<td></td>
+		
+		<td class="F">Red / Enemy</td>
+		<td><button class="g" ID="SBn2"  onclick="Sred()" >1</button></td>
+		<td></td>
+		
+		<td class="F">Blue / Power Up</td>
+		<td><button class="g" ID="SBn3"  onclick="Sblue()" >2</button></td>
+		<td></td>
+		
+		<td class="F">Purple / Lazer</td>
+		<td><button class="g" ID="SBn4"  onclick="Spink()" >3</button></td>
+		<td></td>
+		
+	<tr>
+		
+	</table>
+
+
+</div>
+
+
+
+<div id="inputTable">
+	<table>
+	<!-- rows 1,2 and 13 are automatically all 0-->
+
+
+	<tr id="1">
+		<td>1</td>
+		<td><button class="B" ID="btn11"  onclick="changeButton(btn11)" >0</button></td>
+		<td><button class="B" ID="btn12"  onclick="changeButton(btn12)" >0</button></td>
+		<td><button class="B" ID="btn13"  onclick="changeButton(btn13)" >0</button></td>
+		<td><button class="B" ID="btn14"  onclick="changeButton(btn14)" >0</button></td>
+		<td><button class="B" ID="btn15"  onclick="changeButton(btn15)" >0</button></td>
+		<td><button class="B" ID="btn16"  onclick="changeButton(btn16)" >0</button></td>
+		<td><button class="B" ID="btn17"  onclick="changeButton(btn17)" >0</button></td>
+		<td><button class="B" ID="btn18"  onclick="changeButton(btn18)" >0</button></td>
+		<td><button class="B" ID="btn19"  onclick="changeButton(btn19)" >0</button></td>
+		<td><button class="B" ID="btn110" onclick="changeButton(btn110)">0</button></td>
+		<td><button class="B" ID="btn111" onclick="changeButton(btn111)">0</button></td>
+		<td><button class="B" ID="btn112" onclick="changeButton(btn112)">0</button></td>
+		<td><button class="B" ID="btn113" onclick="changeButton(btn113)">0</button></td>
+		<td><button class="B" ID="btn114" onclick="changeButton(btn114)">0</button></td>
+		<td><button class="B" ID="btn115" onclick="changeButton(btn115)">0</button></td>
+		<td><button class="B" ID="btn116" onclick="changeButton(btn116)">0</button></td>
+		<td><button class="B" ID="btn117" onclick="changeButton(btn117)">0</button></td>
+		<td><button class="B" ID="btn118" onclick="changeButton(btn118)">0</button></td>
+		<td><button class="B" ID="btn119" onclick="changeButton(btn119)">0</button></td>
+		<td><button class="B" ID="btn120" onclick="changeButton(btn120)">0</button></td>
+	</tr>
+
+	<tr id="2">
+		<td>2</td>
+		<td><button class="B" ID="btn21"  onclick="changeButton(btn21)" >0</button></td>
+		<td><button class="B" ID="btn22"  onclick="changeButton(btn22)" >0</button></td>
+		<td><button class="B" ID="btn23"  onclick="changeButton(btn23)" >0</button></td>
+		<td><button class="B" ID="btn24"  onclick="changeButton(btn24)" >0</button></td>
+		<td><button class="B" ID="btn25"  onclick="changeButton(btn25)" >0</button></td>
+		<td><button class="B" ID="btn26"  onclick="changeButton(btn26)" >0</button></td>
+		<td><button class="B" ID="btn27"  onclick="changeButton(btn27)" >0</button></td>
+		<td><button class="B" ID="btn28"  onclick="changeButton(btn28)" >0</button></td>
+		<td><button class="B" ID="btn29"  onclick="changeButton(btn29)" >0</button></td>
+		<td><button class="B" ID="btn210" onclick="changeButton(btn210)">0</button></td>
+		<td><button class="B" ID="btn211" onclick="changeButton(btn211)">0</button></td>
+		<td><button class="B" ID="btn212" onclick="changeButton(btn212)">0</button></td>
+		<td><button class="B" ID="btn213" onclick="changeButton(btn213)">0</button></td>
+		<td><button class="B" ID="btn214" onclick="changeButton(btn214)">0</button></td>
+		<td><button class="B" ID="btn215" onclick="changeButton(btn215)">0</button></td>
+		<td><button class="B" ID="btn216" onclick="changeButton(btn216)">0</button></td>
+		<td><button class="B" ID="btn217" onclick="changeButton(btn217)">0</button></td>
+		<td><button class="B" ID="btn218" onclick="changeButton(btn218)">0</button></td>
+		<td><button class="B" ID="btn219" onclick="changeButton(btn219)">0</button></td>
+		<td><button class="B" ID="btn220" onclick="changeButton(btn220)">0</button></td>
+	</tr>
+
+	<tr id="3">
+		<td>3</td>
+		<td><button class="B" ID="btn31"  onclick="changeButton(btn31)" >0</button></td>
+		<td><button class="B" ID="btn32"  onclick="changeButton(btn32)" >0</button></td>
+		<td><button class="B" ID="btn33"  onclick="changeButton(btn33)" >0</button></td>
+		<td><button class="B" ID="btn34"  onclick="changeButton(btn34)" >0</button></td>
+		<td><button class="B" ID="btn35"  onclick="changeButton(btn35)" >0</button></td>
+		<td><button class="B" ID="btn36"  onclick="changeButton(btn36)" >0</button></td>
+		<td><button class="B" ID="btn37"  onclick="changeButton(btn37)" >0</button></td>
+		<td><button class="B" ID="btn38"  onclick="changeButton(btn38)" >0</button></td>
+		<td><button class="B" ID="btn39"  onclick="changeButton(btn39)" >0</button></td>
+		<td><button class="B" ID="btn310" onclick="changeButton(btn310)">0</button></td>
+		<td><button class="B" ID="btn311" onclick="changeButton(btn311)">0</button></td>
+		<td><button class="B" ID="btn312" onclick="changeButton(btn312)">0</button></td>
+		<td><button class="B" ID="btn313" onclick="changeButton(btn313)">0</button></td>
+		<td><button class="B" ID="btn314" onclick="changeButton(btn314)">0</button></td>
+		<td><button class="B" ID="btn315" onclick="changeButton(btn315)">0</button></td>
+		<td><button class="B" ID="btn316" onclick="changeButton(btn316)">0</button></td>
+		<td><button class="B" ID="btn317" onclick="changeButton(btn317)">0</button></td>
+		<td><button class="B" ID="btn318" onclick="changeButton(btn318)">0</button></td>
+		<td><button class="B" ID="btn319" onclick="changeButton(btn319)">0</button></td>
+		<td><button class="B" ID="btn320" onclick="changeButton(btn320)">0</button></td>
+	</tr>
+
+	<tr id="4">
+		<td>4</td>
+		<td><button class="B" ID="btn41"  onclick="changeButton(btn41)" >0</button></td>
+		<td><button class="B" ID="btn42"  onclick="changeButton(btn42)" >0</button></td>
+		<td><button class="B" ID="btn43"  onclick="changeButton(btn43)" >0</button></td>
+		<td><button class="B" ID="btn44"  onclick="changeButton(btn44)" >0</button></td>
+		<td><button class="B" ID="btn45"  onclick="changeButton(btn45)" >0</button></td>
+		<td><button class="B" ID="btn46"  onclick="changeButton(btn46)" >0</button></td>
+		<td><button class="B" ID="btn47"  onclick="changeButton(btn47)" >0</button></td>
+		<td><button class="B" ID="btn48"  onclick="changeButton(btn48)" >0</button></td>
+		<td><button class="B" ID="btn49"  onclick="changeButton(btn49)" >0</button></td>
+		<td><button class="B" ID="btn410" onclick="changeButton(btn410)">0</button></td>
+		<td><button class="B" ID="btn411" onclick="changeButton(btn411)">0</button></td>
+		<td><button class="B" ID="btn412" onclick="changeButton(btn412)">0</button></td>
+		<td><button class="B" ID="btn413" onclick="changeButton(btn413)">0</button></td>
+		<td><button class="B" ID="btn414" onclick="changeButton(btn414)">0</button></td>
+		<td><button class="B" ID="btn415" onclick="changeButton(btn415)">0</button></td>
+		<td><button class="B" ID="btn416" onclick="changeButton(btn416)">0</button></td>
+		<td><button class="B" ID="btn417" onclick="changeButton(btn417)">0</button></td>
+		<td><button class="B" ID="btn418" onclick="changeButton(btn418)">0</button></td>
+		<td><button class="B" ID="btn419" onclick="changeButton(btn419)">0</button></td>
+		<td><button class="B" ID="btn420" onclick="changeButton(btn420)">0</button></td>
+	</tr>
+
+	<tr id="5">
+		<td>5</td>
+		<td><button class="B" ID="btn51"  onclick="changeButton(btn51)" >0</button></td>
+		<td><button class="B" ID="btn52"  onclick="changeButton(btn52)" >0</button></td>
+		<td><button class="B" ID="btn53"  onclick="changeButton(btn53)" >0</button></td>
+		<td><button class="B" ID="btn54"  onclick="changeButton(btn54)" >0</button></td>
+		<td><button class="B" ID="btn55"  onclick="changeButton(btn55)" >0</button></td>
+		<td><button class="B" ID="btn56"  onclick="changeButton(btn56)" >0</button></td>
+		<td><button class="B" ID="btn57"  onclick="changeButton(btn57)" >0</button></td>
+		<td><button class="B" ID="btn58"  onclick="changeButton(btn58)" >0</button></td>
+		<td><button class="B" ID="btn59"  onclick="changeButton(btn59)" >0</button></td>
+		<td><button class="B" ID="btn510" onclick="changeButton(btn510)">0</button></td>
+		<td><button class="B" ID="btn511" onclick="changeButton(btn511)">0</button></td>
+		<td><button class="B" ID="btn512" onclick="changeButton(btn512)">0</button></td>
+		<td><button class="B" ID="btn513" onclick="changeButton(btn513)">0</button></td>
+		<td><button class="B" ID="btn514" onclick="changeButton(btn514)">0</button></td>
+		<td><button class="B" ID="btn515" onclick="changeButton(btn515)">0</button></td>
+		<td><button class="B" ID="btn516" onclick="changeButton(btn516)">0</button></td>
+		<td><button class="B" ID="btn517" onclick="changeButton(btn517)">0</button></td>
+		<td><button class="B" ID="btn518" onclick="changeButton(btn518)">0</button></td>
+		<td><button class="B" ID="btn519" onclick="changeButton(btn519)">0</button></td>
+		<td><button class="B" ID="btn520" onclick="changeButton(btn520)">0</button></td>
+	</tr>
+
+	<tr id="6">
+		<td>6</td>
+		<td><button class="B" ID="btn61"  onclick="changeButton(btn61)" >0</button></td>
+		<td><button class="B" ID="btn62"  onclick="changeButton(btn62)" >0</button></td>
+		<td><button class="B" ID="btn63"  onclick="changeButton(btn63)" >0</button></td>
+		<td><button class="B" ID="btn64"  onclick="changeButton(btn64)" >0</button></td>
+		<td><button class="B" ID="btn65"  onclick="changeButton(btn65)" >0</button></td>
+		<td><button class="B" ID="btn66"  onclick="changeButton(btn66)" >0</button></td>
+		<td><button class="B" ID="btn67"  onclick="changeButton(btn67)" >0</button></td>
+		<td><button class="B" ID="btn68"  onclick="changeButton(btn68)" >0</button></td>
+		<td><button class="B" ID="btn69"  onclick="changeButton(btn69)" >0</button></td>
+		<td><button class="B" ID="btn610" onclick="changeButton(btn610)">0</button></td>
+		<td><button class="B" ID="btn611" onclick="changeButton(btn611)">0</button></td>
+		<td><button class="B" ID="btn612" onclick="changeButton(btn612)">0</button></td>
+		<td><button class="B" ID="btn613" onclick="changeButton(btn613)">0</button></td>
+		<td><button class="B" ID="btn614" onclick="changeButton(btn614)">0</button></td>
+		<td><button class="B" ID="btn615" onclick="changeButton(btn615)">0</button></td>
+		<td><button class="B" ID="btn616" onclick="changeButton(btn616)">0</button></td>
+		<td><button class="B" ID="btn617" onclick="changeButton(btn617)">0</button></td>
+		<td><button class="B" ID="btn618" onclick="changeButton(btn618)">0</button></td>
+		<td><button class="B" ID="btn619" onclick="changeButton(btn619)">0</button></td>
+		<td><button class="B" ID="btn620" onclick="changeButton(btn620)">0</button></td>
+	</tr>
+
+	<tr id="7">
+		<td>7</td>
+		<td><button class="B" ID="btn71"  onclick="changeButton(btn71)" >0</button></td>
+		<td><button class="B" ID="btn72"  onclick="changeButton(btn72)" >0</button></td>
+		<td><button class="B" ID="btn73"  onclick="changeButton(btn73)" >0</button></td>
+		<td><button class="B" ID="btn74"  onclick="changeButton(btn74)" >0</button></td>
+		<td><button class="B" ID="btn75"  onclick="changeButton(btn75)" >0</button></td>
+		<td><button class="B" ID="btn76"  onclick="changeButton(btn76)" >0</button></td>
+		<td><button class="B" ID="btn77"  onclick="changeButton(btn77)" >0</button></td>
+		<td><button class="B" ID="btn78"  onclick="changeButton(btn78)" >0</button></td>
+		<td><button class="B" ID="btn79"  onclick="changeButton(btn79)" >0</button></td>
+		<td><button class="B" ID="btn710" onclick="changeButton(btn710)">0</button></td>
+		<td><button class="B" ID="btn711" onclick="changeButton(btn711)">0</button></td>
+		<td><button class="B" ID="btn712" onclick="changeButton(btn712)">0</button></td>
+		<td><button class="B" ID="btn713" onclick="changeButton(btn713)">0</button></td>
+		<td><button class="B" ID="btn714" onclick="changeButton(btn714)">0</button></td>
+		<td><button class="B" ID="btn715" onclick="changeButton(btn715)">0</button></td>
+		<td><button class="B" ID="btn716" onclick="changeButton(btn716)">0</button></td>
+		<td><button class="B" ID="btn717" onclick="changeButton(btn717)">0</button></td>
+		<td><button class="B" ID="btn718" onclick="changeButton(btn718)">0</button></td>
+		<td><button class="B" ID="btn719" onclick="changeButton(btn719)">0</button></td>
+		<td><button class="B" ID="btn720" onclick="changeButton(btn720)">0</button></td>
+	</tr>
+
+	<tr id="8">
+		<td>8</td>
+		<td><button class="B" ID="btn81"  onclick="changeButton(btn81)" >0</button></td>
+		<td><button class="B" ID="btn82"  onclick="changeButton(btn82)" >0</button></td>
+		<td><button class="B" ID="btn83"  onclick="changeButton(btn83)" >0</button></td>
+		<td><button class="B" ID="btn84"  onclick="changeButton(btn84)" >0</button></td>
+		<td><button class="B" ID="btn85"  onclick="changeButton(btn85)" >0</button></td>
+		<td><button class="B" ID="btn86"  onclick="changeButton(btn86)" >0</button></td>
+		<td><button class="B" ID="btn87"  onclick="changeButton(btn87)" >0</button></td>
+		<td><button class="B" ID="btn88"  onclick="changeButton(btn88)" >0</button></td>
+		<td><button class="B" ID="btn89"  onclick="changeButton(btn89)" >0</button></td>
+		<td><button class="B" ID="btn810" onclick="changeButton(btn810)">0</button></td>
+		<td><button class="B" ID="btn811" onclick="changeButton(btn811)">0</button></td>
+		<td><button class="B" ID="btn812" onclick="changeButton(btn812)">0</button></td>
+		<td><button class="B" ID="btn813" onclick="changeButton(btn813)">0</button></td>
+		<td><button class="B" ID="btn814" onclick="changeButton(btn814)">0</button></td>
+		<td><button class="B" ID="btn815" onclick="changeButton(btn815)">0</button></td>
+		<td><button class="B" ID="btn816" onclick="changeButton(btn816)">0</button></td>
+		<td><button class="B" ID="btn817" onclick="changeButton(btn817)">0</button></td>
+		<td><button class="B" ID="btn818" onclick="changeButton(btn818)">0</button></td>
+		<td><button class="B" ID="btn819" onclick="changeButton(btn819)">0</button></td>
+		<td><button class="B" ID="btn820" onclick="changeButton(btn820)">0</button></td>
+	</tr>
+
+	</table>
+</div>
+
+	<form id="nameInput">
+		<br>
+		
+		<div style="float:right;">
+				If you wish your name to be stored with it, enter it below:<br>
+				<input type="text" name="name" size="25" maxlength="40" id="NInput">
+		</div>
+
+		<div>
+			Enter the number of the Section it is:<br>
+			<input type="number" id="number"></input>
+		</div>
+		
+		<br>
+		<button onclick="refresh()" style="float:right;width:150px;"><b>Click to reset</b></button>
+		<section>If possible, this section may soon become automatic.</section>
+		<br>		
+	</form>
+
+
+	<button id="submit" onclick="printCode()">Click to Produce Code</button>
+
+	<div id="outArea" >
+		<div>
+			<br>
+			<h3 style="font-size:20px;">Copy the Code Below</h3>
+			<br>
+			<p style="font-size:15px;">Copy this code and paste it into the Microbit Javascript section</p>
+			<br>
+		</div>
+
+		<div id="copyCode">
+
+			<div id="outCode_Title"></div>
+			<div id="nameArea"></div>
+			
+			<p>if(stage == 0){B_X[19] = ["0","0","0","0","0","0","0","0"];</p>
+			<p>}else if(stage == 1){<span id="outCode1"></span></p>
+			<p>}else if(stage == 2){<span id="outCode2"></span></p>
+			<p>}else if(stage == 3){<span id="outCode3"></span></p>
+			<p>}else if(stage == 4){<span id="outCode4"></span></p>
+			<p>}else if(stage == 5){<span id="outCode5"></span></p>
+			<p>}else if(stage == 6){<span id="outCode6"></span></p>
+			<p>}else if(stage == 7){<span id="outCode7"></span></p>				
+			<p>}else if(stage == 8){<span id="outCode8"></span></p>
+			<p>}else if(stage == 9){<span id="outCode9"></span></p>
+			<p>}else if(stage == 10){<span id="outCode10"></span></p>
+			<p>}else if(stage == 11){<span id="outCode11"></span></p>
+			<p>}else if(stage == 12){<span id="outCode12"></span></p>
+			<p>}else if(stage == 13){<span id="outCode13"></span></p>
+			<p>}else if(stage == 14){<span id="outCode14"></span></p>
+			<p>}else if(stage == 15){<span id="outCode15"></span></p>
+			<p>}else if(stage == 16){<span id="outCode16"></span></p>
+			<p>}else if(stage == 17){<span id="outCode17"></span></p>
+			<p>}else if(stage == 18){<span id="outCode18"></span></p>
+			<p>}else if(stage == 19){<span id="outCode19"></span></p>
+			<p>}else if(stage == 20){<span id="outCode20"></span></p>
+			<p>}else if(stage == 21){B_X[19] = ["0","0","0","0","0","0","0","0"];</p>
+			<p>level = -1;</p>
+			<p>stage = 0;</p>
+			<p>}<br>}</p>
+	
+		<br>
+		</div>
+	</div>
+	<br><Br><br><br><Br>
+
+	<div id="notes" style="display:none">
+		<h4>Notes</h4>
+		<p>Soon, I would like this to be connected to a server, where when you submit the level, it will be able to assign a number for each level.</p>
+		<p>If it does upload it to a server, then it would also be able to have a database of every level, and when one is submited that has all ready been made, it can say that to you</p>
+		<p>maybe one day, this website, or a copy/similar one  would become the actual game....</p> 
+		<p>The orginal idea for this game may be from someone else, however, I did code it all</p>
+	</div>
+	</main>
+
+	<footer>
+
+	</footer>
+</body>
+</html>

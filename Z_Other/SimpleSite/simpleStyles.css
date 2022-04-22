@@ -1,0 +1,52 @@
+/*
+	Colours
+	   blue
+	   red
+	   violet
+	   tomato
+	   #00ff00  (green)
+	
+	
+	
+*/
+#title{
+	background-color:;
+	color:;
+	font-size:;
+	text-align:;
+}
+#text{
+	background-color:;
+	color:;
+	font-size:;
+	text-align:;	
+}
+#content{
+	background-color:;
+	color:;
+	font-size:;
+	text-align:;
+}
+
+
+
+/*Do not Edit the following*/
+body{
+	background-color:#f0eeee;	
+	
+}
+#main{
+	margin-left:auto;
+	margin-right:auto;
+	padding:3px;
+	background-color:white;
+	width:85%;
+}
+#nav{
+	height:2rem;
+	background-color:blue;
+}
+
+
+
+

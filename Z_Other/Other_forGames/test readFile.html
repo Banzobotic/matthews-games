@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<!--
+<html>
+  
+<head>
+    <title>Read Text File</title>
+</head>
+  
+<body>
+    <input type="file" name="123" id="inputfile">
+    <br>
+   
+    <pre id="output"></pre>
+      
+    <script type="text/javascript">
+     document.getElementById('inputfile')	
+      .addEventListener('change', function() 
+	  
+		{        
+           var fr=new FileReader();
+		fr.onload=function(){
+				/* document.getElementById('output')
+                       .textContent=fr.result;*/
+				alert(fr.result);//fr.result is the text from the file
+			}
+             
+			fr.readAsText(this.files[0]);
+		}
+	)
+    </script>
+</body>
+  
+</html>
+
+<html>
+
+<body>
+
+	<script>
+	
+	
+
+		fetch('file.txt')
+		.then(response => response.text())
+		.then(text => console.log(text))
+	function readTextFile(file)
+	{
+		var rawFile = new XMLHttpRequest();
+		rawFile.open("GET", file, false);
+		rawFile.onreadystatechange = function ()
+		{
+			if(rawFile.readyState === 4)
+			{
+				if(rawFile.status === 200 || rawFile.status == 0)
+				{
+					var allText = rawFile.responseText;
+					alert(allText);
+				}
+			}
+		}
+		rawFile.send(null);
+	}
+
+
+	</script>
+
+	<button onclick="readTextFile('file:///Z:/S6/Applied%20Computing/Microbits/Website/@_Current%20Version/Other/note.txt')"
+
+	>Load file</button>
+
+
+
+</body>
+</html>
+-->
+<html>
+    <head>
+    <script>
+	// Create an XMLHttpRequest object
+		const xhttp = new XMLHttpRequest();
+
+		// Define a callback function
+		xhttp.onload = function() {
+		  // Here you can use the Data
+		}
+		xhttp.open("GET", "ajax_info.txt");
+		xhttp.send();
+    </script>
+    </head>
+    <body>
+
+	
+    <div id='output'>
+    ...
+    </div>
+    </body>
+<html>

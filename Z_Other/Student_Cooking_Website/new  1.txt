@@ -1,0 +1,56 @@
+
+document.getElementById("italianpageFiller").style.display="none";
+
+
+
+
+
+if (thisImage.id.match("italianImage1"))
+	{
+		document.getElementById("italianImage2").style.marignBottom="30px";
+		document.getElementById("italianImage3").style.marignBottom="30px";
+		document.getElementById("italianImage4").style.marignBottom="30px";
+
+		document.getElementById("italianImage2").style.marginTop="20px";
+		document.getElementById("italianImage3").style.marginTop="20px";
+		document.getElementById("italianImage4").style.marginTop="20px";
+	}	
+	else{
+
+		if (thisImage.id.match("italianImage2"))
+		{
+			document.getElementById("italianImage1").style.marignBottom="30px";
+			document.getElementById("italianImage3").style.marignBottom="30px";
+			document.getElementById("italianImage4").style.marignBottom="30px";
+
+			document.getElementById("italianImage1").style.marginTop="20px";
+			document.getElementById("italianImage3").style.marginTop="20px";
+			document.getElementById("italianImage4").style.marginTop="20px";
+		}
+		else{
+
+			if (thisImage.id.match("italianImage3"))
+			{
+				document.getElementById("italianImage1").style.marignBottom="30px";
+				document.getElementById("italianImage2").style.marignBottom="30px";
+				document.getElementById("italianImage4").style.marignBottom="30px";
+
+				document.getElementById("italianImage2").style.marginTop="20px";
+				document.getElementById("italianImage1").style.marginTop="20px";
+				document.getElementById("italianImage4").style.marginTop="20px";
+			}
+			else{
+
+				if (thisImage.id.match("italianImage4"))
+				{
+					document.getElementById("italianImage1").style.marignBottom="30px";
+					document.getElementById("italianImage3").style.marignBottom="30px";
+					document.getElementById("italianImage2").style.marignBottom="30px";
+
+					document.getElementById("italianImage2").style.marginTop="20px";
+					document.getElementById("italianImage3").style.marginTop="20px";
+					document.getElementById("italianImage1").style.marginTop="20px";
+				}
+			}
+		}
+	}

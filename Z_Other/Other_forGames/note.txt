@@ -1,0 +1,1 @@
+need to have the entire page within a div that is set to certain dimensions - score is too far right

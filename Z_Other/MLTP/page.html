@@ -1,0 +1,61 @@
+<html>
+
+<header>
+	<title>Make Table</title>
+	
+	<script type="text/javascript" src="tableScripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="tableStyles.css">	
+</header>
+
+<body>
+	<h1>Make Table</h1>
+	<p>Fill in the form to produce the html for a large table</p>
+	<br>
+	
+	<div id="outArea">
+	<h3>Below is the output</h3>
+		<hr><p id="out"></p><hr>
+	
+	</div>
+
+	<br>	
+	
+	<form onsubmit="produceCode()" name="inputForm" id="inputForm">
+		<br>
+		<label><b>Enter number of columns: </b></label>
+		<input type="number" name="Xvalues" id="XValues"></input>
+		<br>
+		
+		<br>
+		<label><b>Enter number of rows: </b></label>
+		<input type="number" name="Yvalues" id="YValues"></input>
+		<br>
+		
+		<Br>			
+		<label><b>Enter the Class name </b><br>that every table cell would have</label>
+		<input type="text" name="className" id="classNames"></input>
+		<br>
+		<Br>
+		
+		<label><b>Enter the Function name </b>
+		<BR>that every table cell would have to do 
+		<br>(ID will be inside brackets, which are not needed to be included)</label>
+		<input type="text" name="functionName" id="FunctionName"></input>
+		<br>		
+		
+		<p>All ID`s will be in the form <b>btnX_Y</b> <br>
+		<i>Where X is the X coordiate of the cell and Y is the Y coordiante of the cell</i></p>
+		<Br>
+		<input type="submit" value="S U B M I T" class="submitButton">
+		
+	</form>
+
+	<br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><Br>
+	
+	<button onclick="ChangeDiv()">Click me</button>
+
+	
+	
+</body>
+</html>
